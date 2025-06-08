@@ -232,15 +232,14 @@ img {
 
 .home__blob {
   fill: var(--first-color);
+}
+
+.home__blob-img {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 400px;
-  transform: translateX(20px); translateY(30px);
-}
-
-.home__blob-img {
-  width: 500px;
+  transform: translateX(40px);
 }
 
 /*==================== BUTTON ====================*/
