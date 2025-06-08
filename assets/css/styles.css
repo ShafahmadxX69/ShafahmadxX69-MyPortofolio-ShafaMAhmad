@@ -224,7 +224,9 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 360px;
+  width: 400px;
+  border-radius: 50%; /* supaya bulat */
+  object-fit: cover;
 }
 
 /*BUTTONS*/
