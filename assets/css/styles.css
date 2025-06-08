@@ -232,6 +232,11 @@ img {
 
 .home__blob {
   fill: var(--first-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  transform: translateX(40px);
 }
 
 .home__blob-img {
