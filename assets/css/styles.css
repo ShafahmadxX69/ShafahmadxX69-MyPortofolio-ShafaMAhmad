@@ -224,9 +224,10 @@ img {
 
 .home__img {
   position: absolute;
-  right: -10;
+  right: 0;
   bottom: 0;
   width: 260px;
+  transform: translateX(10px);
 }
 
 .home__blob {
