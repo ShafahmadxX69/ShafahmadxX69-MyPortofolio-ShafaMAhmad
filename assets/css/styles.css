@@ -236,7 +236,7 @@ img {
   right: 0;
   bottom: 0;
   width: 400px;
-  transform: translateX(40px);
+  transform: translateX(20px); translateY(30px);
 }
 
 .home__blob-img {
