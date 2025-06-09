@@ -257,10 +257,7 @@ img {
 .about__img img {
   width: 800px;
   border-radius: 0.5rem;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 100px 10px; /* atas/bawah: 60px, kiri/kanan: 40px */
 }
 
 /* ===== SKILLS =====*/
