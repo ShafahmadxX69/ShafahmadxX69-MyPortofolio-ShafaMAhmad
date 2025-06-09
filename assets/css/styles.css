@@ -255,7 +255,7 @@ img {
   justify-self: center;
 }
 .about__img img {
-  width: 200px;
+  width: 400px;
   border-radius: 0.5rem;
 }
 
@@ -294,7 +294,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
