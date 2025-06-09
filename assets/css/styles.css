@@ -152,10 +152,10 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 .nav__logo {
-  color: var(--second-color);
+  color: var(--third-color);
 }
 .nav__toggle {
   color: var(--second-color);
@@ -200,7 +200,7 @@ img {
   display: inline-block;
   margin-left: 0.2rem;
   transform: translateY(-0.3rem);
-  color: var(--third-color);
+  color: var(--second-color);
 }
 .home__social {
   display: flex;
@@ -210,10 +210,10 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 .home__social-icon:hover {
-  color: var(--first-color);
+  color: var(--second-color);
 }
 .home__img {
   position: absolute;
@@ -228,7 +228,7 @@ img {
   width: 400px;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -30px;
 }
 /*BUTTONS*/
 .button {
@@ -286,7 +286,7 @@ img {
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  color: var(--second-color);
 }
 .skills__names {
   display: flex;
@@ -296,7 +296,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: var(--third-color);
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
@@ -355,7 +355,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: var(--third-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
