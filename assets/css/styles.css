@@ -10,6 +10,7 @@
   --hue-color: 247;
   --first-color: hsl(var(--hue-color), 77%, 90%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --third-color: hsl(var(--hue-color), 81%, 68%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -47,7 +48,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--third-color);
 }
 
 h1, h2, p {
@@ -74,7 +75,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--second-color);
+  color: var(--third-color);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -88,7 +89,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--second-color);
+  background-color: var(--third-color);
 }
 
 .section {
@@ -170,7 +171,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--third-color);
 }
 
 /*=== Show menu ===*/
@@ -199,7 +200,7 @@ img {
   display: inline-block;
   margin-left: 0.2rem;
   transform: translateY(-0.3rem);
-  color: var(--second-color);
+  color: var(--third-color);
 }
 .home__social {
   display: flex;
@@ -209,7 +210,7 @@ img {
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
-  color: var(--second-color);
+  color: var(--third-color);
 }
 .home__social-icon:hover {
   color: var(--first-color);
@@ -232,7 +233,7 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--second-color);
+  background-color: var(--third-color);
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
