@@ -48,7 +48,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 h1, h2, p {
@@ -75,7 +75,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--third-color);
+  color: var(--second-color);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -89,7 +89,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--third-color);
+  background-color: var(--second-color);
 }
 
 .section {
