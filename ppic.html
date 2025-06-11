@@ -2,43 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Production Planning and Inventory Control - Shafa Millah Ahmad</title>
+    <title>PPIC Staff - Shafa Millah Ahmad</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            height: 250px;
+            border-radius: 10px;
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+        }
+        .work-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .work-info ul {
+            padding-left: 20px;
+        }
+        .work-info h4 {
+            margin-top: 1em;
+        }
+        @media screen and (max-width: 768px) {
+            .work-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="l-header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="index.html" class="nav__logo">Shafa Millah Ahmad</a>
-            </div>
+            <div><a href="index.html" class="nav__logo">Shafa Millah Ahmad</a></div>
         </nav>
     </header>
 
     <main class="l-main">
-        <section class="about section">
-            <h2 class="section-title">Project: PPIC Optimization</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/work1.jpg" alt="">
+        <section class="about section" style="margin-top: 80px;">
+            <h2 class="section-title">Work: PPIC Staff – PT. Universal Luggage Indonesia</h2>
+            <div class="about__container work-detail">
+                <!-- Carousel Foto -->
+                <div class="carousel">
+                    <img src="assets/img/work1.jpg" alt="Production Flow">
+                    <img src="assets/img/ppic-1.jpg" alt="Excel Dashboard">
+                    <img src="assets/img/ppic-2.jpg" alt="Schedule Monitoring">
                 </div>
-                <div>
-                    <h2 class="about__subtitle">Project Description</h2>
-                    <p class="about__text">
-                        In this project, I optimized the entire PPIC (Production Planning & Inventory Control) process
-                        by integrating automated Excel systems with VBA macros and dynamic reporting tools. This reduced
-                        manual entry by 80% and improved schedule accuracy significantly.
+
+                <!-- Deskripsi -->
+                <div class="work-info">
+                    <h3>Deskripsi Pekerjaan</h3>
+                    <p>
+                        Sebagai PPIC Staff, saya bertanggung jawab mengontrol barang hasil produksi, mendokumentasikan data, mengawasi proses produksi, serta membuat dokumen ekspor untuk pengiriman domestik dan internasional.
                     </p>
 
-                    <h3>Key Skills & Tools:</h3>
+                    <h4>Durasi</h4>
+                    <p>Februari 2024 – Sekarang</p>
+
+                    <h4>Pencapaian</h4>
                     <ul>
-                        <li>Microsoft Excel - PivotTable, VBA Macros</li>
-                        <li>Production Scheduling</li>
-                        <li>Workflow Optimization</li>
-                        <li>Team Coordination</li>
+                        <li>Meningkatkan proses administrasi hingga 90% melalui sistem Excel otomatis</li>
+                        <li>Pemutakhiran laporan produksi barang jadi dan pengerjaan ulang</li>
+                        <li>Pemutakhiran laporan pengiriman harian</li>
+                        <li>Pemutakhiran pelacakan produk barang jadi</li>
+                        <li>Pemutakhiran efisiensi administrasi dokumen seluruh proses</li>
+                        <li>Pembuatan website pengecekan data barang yang telah dieksport</li>
+                        <li>Mengurangi durasi proses pekerjaan</li>
                     </ul>
 
-                    <a href="index.html#work" class="button">← Back to Work</a>
+                    <h4>Kontribusi Konkret</h4>
+                    <ul>
+                        <li>Membuat dashboard Excel harian untuk memantau ketersediaan barang</li>
+                        <li>Mengembangkan sistem dalam format siap cetak</li>
+                        <li>Mengembangkan otomasi agar mempersingkat waktu</li>
+                    </ul>
+
+                    <h4>Metode STAR (Tanggung Jawab)</h4>
+                    <ul>
+                        <li><strong>Situation:</strong> Perusahaan menghadapi keterlambatan produksi akibat data bahan baku tidak terpantau.</li>
+                        <li><strong>Task:</strong> Membuat sistem pelacakan bahan baku dan output produksi secara real-time.</li>
+                        <li><strong>Action:</strong> Merancang dashboard Excel + VBA untuk integrasi data gudang, produksi, dan ekspor.</li>
+                        <li><strong>Result:</strong> Waktu pencarian informasi berkurang hingga 75% dan efisiensi meningkat signifikan.</li>
+                    </ul>
+
+                    <a href="index.html#work" class="button" style="margin-top: 30px;">← Back to Work</a>
                 </div>
             </div>
         </section>
