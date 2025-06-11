@@ -225,10 +225,10 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 400px;
+  width: 300px;
   position: absolute;
   top: 0px;
-  left: -30px;
+  left: 30px;
 }
 /*BUTTONS*/
 .button {
