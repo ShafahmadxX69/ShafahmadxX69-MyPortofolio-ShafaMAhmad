@@ -196,7 +196,7 @@ img {
   color: var(--third-color);
 }
 .home__subtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   display: inline-block;
   margin-left: 0.2rem;
   transform: translateY(-0.3rem);
@@ -223,11 +223,9 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
-  top: 0px;
-  left: -30px;
 }
 .home__blob-img {
-  width: 450px;
+  width: 400px;
   position: absolute;
   top: 0px;
   left: -30px;
