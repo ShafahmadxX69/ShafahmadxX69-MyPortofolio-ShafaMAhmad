@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shafa Millah Ahmad</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    .language-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 9999;
+    }
+    .language-toggle button {
+      margin: 0 0.25rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      background: #333;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .language-toggle button.active {
+      background: #ff9800;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-toggle">
+    <button id="btn-en" onclick="setLanguage('en')">EN</button>
+    <button id="btn-id" onclick="setLanguage('id')">ID</button>
+  </div>
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Shafa Millah Ahmad</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
+  <!--===== HEADER =====-->
+  <header class="l-header">
     <nav class="nav bd-grid">
-        <div>
-            <a href="#" class="nav__logo">Shafa Millah Ahmad</a>
-        </div>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">
-                        <span class="lang-en">Home</span>
-                        <span class="lang-id" style="display:none;">Beranda</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">
-                        <span class="lang-en">About</span>
-                        <span class="lang-id" style="display:none;">Tentang</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link">
-                        <span class="lang-en">Skills</span>
-                        <span class="lang-id" style="display:none;">Keahlian</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#work" class="nav__link">
-                        <span class="lang-en">Work</span>
-                        <span class="lang-id" style="display:none;">Pekerjaan</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contact" class="nav__link">
-                        <span class="lang-en">Contact</span>
-                        <span class="lang-id" style="display:none;">Kontak</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-menu'></i>
-        </div>
+      <div>
+        <a href="#" class="nav__logo">Shafa Millah Ahmad</a>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <span class="lang-en">Home</span>
+              <span class="lang-id" style="display:none;">Beranda</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <span class="lang-en">About</span>
+              <span class="lang-id" style="display:none;">Tentang</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <span class="lang-en">Skills</span>
+              <span class="lang-id" style="display:none;">Keahlian</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">
+              <span class="lang-en">Work</span>
+              <span class="lang-id" style="display:none;">Pekerjaan</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <span class="lang-en">Contact</span>
+              <span class="lang-id" style="display:none;">Kontak</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
     </nav>
-</header>
+  </header>
 
-
-        <script>
-function setLanguage(lang) {
-    const enElements = document.querySelectorAll('.lang-en');
-    const idElements = document.querySelectorAll('.lang-id');
-
-    enElements.forEach(el => el.style.display = (lang === 'en' ? '' : 'none'));
-    idElements.forEach(el => el.style.display = (lang === 'id' ? '' : 'none'));
-}
-
-// Aktifkan bahasa default
-setLanguage('en'); // atau 'id' untuk Indonesia
-</script>
-
-
-<!--===== SKILLS =====-->
+ <!--===== SKILLS =====-->
 <section class="skills section" id="skills">
     <h2 class="section-title">
         <span class="lang-en">Skills</span>
         <span class="lang-id" style="display:none;">Keahlian</span>
     </h2>
 
-    <div class="skills__container bd-grid">
+    <div class="skills__container bd-grid">          
         <div>
             <h2 class="skills__subtitle">
                 <span class="lang-en">Professional Skills</span>
                 <span class="lang-id" style="display:none;">Keahlian Profesional</span>
             </h2>
-
             <p class="skills__text">
                 <span class="lang-en">
                     Skilled in administration, team management, production planning, and workflow optimization. Strong command of office and cloud-based tools with a passion for efficiency and accuracy through automation.
@@ -99,7 +103,7 @@ setLanguage('en'); // atau 'id' untuk Indonesia
                 </span>
             </p>
 
-            <!-- Skill 1 -->
+            <!-- Skill Item -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-bar-chart-alt skills__icon'></i>
@@ -112,33 +116,24 @@ setLanguage('en'); // atau 'id' untuk Indonesia
                 <div><span class="skills__percentage">90%</span></div>
             </div>
 
-            <!-- Skill 2 -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-data skills__icon'></i>
-                    <span class="skills__name">
-                        <span class="lang-en">Microsoft Excel (Pivot, VLOOKUP, VBA)</span>
-                        <span class="lang-id" style="display:none;">Microsoft Excel (Pivot, VLOOKUP, VBA)</span>
-                    </span>
+                    <span class="skills__name">Microsoft Excel (Pivot, VLOOKUP, VBA)</span>
                 </div>
                 <div class="skills__bar skills__css"></div>
                 <div><span class="skills__percentage">95%</span></div>
             </div>
 
-            <!-- Skill 3 -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-cloud skills__icon'></i>
-                    <span class="skills__name">
-                        <span class="lang-en">Google Workspace & App Script</span>
-                        <span class="lang-id" style="display:none;">Google Workspace & App Script</span>
-                    </span>
+                    <span class="skills__name">Google Workspace & App Script</span>
                 </div>
                 <div class="skills__bar skills__js"></div>
                 <div><span class="skills__percentage">90%</span></div>
             </div>
 
-            <!-- Skill 4 -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-task skills__icon'></i>
@@ -151,7 +146,6 @@ setLanguage('en'); // atau 'id' untuk Indonesia
                 <div><span class="skills__percentage">95%</span></div>
             </div>
 
-            <!-- Skill 5 -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-group skills__icon'></i>
@@ -164,7 +158,6 @@ setLanguage('en'); // atau 'id' untuk Indonesia
                 <div><span class="skills__percentage">85%</span></div>
             </div>
 
-            <!-- Skill 6 -->
             <div class="skills__data">
                 <div class="skills__names">
                     <i class='bx bx-message-rounded-dots skills__icon'></i>
@@ -177,15 +170,14 @@ setLanguage('en'); // atau 'id' untuk Indonesia
                 <div><span class="skills__percentage">90%</span></div>
             </div>
         </div>
-
-        <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img">
+        
+        <div>              
+            <img src="assets/img/work3.jpg" alt="skills image" class="skills__img">
         </div>
     </div>
 </section>
 
-        
-        <!--===== WORK =====-->
+<!--===== WORK =====-->
 <section class="work section" id="work">
     <h2 class="section-title">
         <span class="lang-en">Work</span>
@@ -194,16 +186,16 @@ setLanguage('en'); // atau 'id' untuk Indonesia
 
     <div class="work__container bd-grid">
         <a href="ppic.html" class="work__img">
-            <img src="assets/img/work1.jpg" alt="">
+            <img src="assets/img/work1.jpg" alt="PPIC work">
         </a>
         <a href="privateteacher.html" class="work__img">
-            <img src="assets/img/work2.jpg" alt="">
+            <img src="assets/img/work2.jpg" alt="Private Teacher work">
         </a>
         <a href="translator.html" class="work__img">
-            <img src="assets/img/work3.jpg" alt="">
+            <img src="assets/img/work3.jpg" alt="Translator work">
         </a>
         <a href="outletspv.html" class="work__img">
-            <img src="assets/img/work4.jpg" alt="">
+            <img src="assets/img/work4.jpg" alt="Outlet Supervisor work">
         </a>
     </div>
 </section>
@@ -216,34 +208,77 @@ setLanguage('en'); // atau 'id' untuk Indonesia
     </h2>
 
     <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-            <input type="text" class="contact__input" placeholder="Name" data-en="Name" data-id="Nama">
-            <input type="email" class="contact__input" placeholder="Email" data-en="Email" data-id="Surel">
-            <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Your message here" data-en="Your message here" data-id="Tulis pesan Anda di sini"></textarea>
-            <input type="button" class="contact__button button" value="Send" data-en="Send" data-id="Kirim">
+        <form action="https://formspree.io/f/yourformid" method="POST" class="contact__form">
+            <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
+            <textarea name="message" placeholder="Your Message" class="contact__input" required></textarea>
+            <input type="submit" value="Send" class="contact__button lang-en">
+            <input type="submit" value="Kirim" class="contact__button lang-id" style="display:none;">
         </form>
+
+        <div class="contact__info">
+            <p>
+                <i class='bx bx-envelope'></i>
+                <span class="lang-en">yours.email@example.com</span>
+                <span class="lang-id" style="display:none;">email.kamu@example.com</span>
+            </p>
+            <p>
+                <i class='bx bx-phone'></i>
+                <span class="lang-en">+62 812 3456 7890</span>
+                <span class="lang-id" style="display:none;">+62 812 3456 7890</span>
+            </p>
+            <p>
+                <i class='bx bx-map'></i>
+                <span class="lang-en">Tangerang, Indonesia</span>
+                <span class="lang-id" style="display:none;">Tangerang, Indonesia</span>
+            </p>
+        </div>
     </div>
 </section>
 
 <!--===== FOOTER =====-->
-<footer style="background-color: #222; color: white; padding: 20px; font-family: sans-serif;">
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+<footer class="footer">
+    <p class="footer__title">
+        <span class="lang-en">Shafa Millah Ahmad</span>
+        <span class="lang-id" style="display:none;">Shafa Millah Ahmad</span>
+    </p>
 
-    <!-- Kiri: Nama dan ikon -->
-    <div>
-      <p style="font-size: 18px; font-weight: bold; margin: 0;">Shafa Millah Ahmad</p>
-      <div style="margin-top: 8px;">
-        <a href="#" style="color: white; margin-right: 10px;"><i class='bx bxl-facebook'></i></a>
-        <a href="#" style="color: white; margin-right: 10px;"><i class='bx bxl-instagram'></i></a>
-        <a href="#" style="color: white;"><i class='bx bxl-twitter'></i></a>
-      </div>
+    <div class="footer__social">
+        <a href="https://linkedin.com/in/yourprofile" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/yourprofile" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="mailto:yours.email@example.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
     </div>
 
-    <!-- Kanan: Copyright -->
-    <div style="text-align: right; font-size: 14px; margin-top: 10px;">
-      <p class="lang-en" style="margin: 0;">&#169; Thanks for visiting</p>
-      <p class="lang-id" style="margin: 0; display:none;">&#169; Terima kasih telah berkunjung</p>
-    </div>
-
-  </div>
+    <p class="footer__copy">
+        <span class="lang-en">&#169; 2025 All rights reserved</span>
+        <span class="lang-id" style="display:none;">&#169; 2025 Semua hak dilindungi</span>
+    </p>
 </footer>
+
+
+  <script>
+    function setLanguage(lang) {
+      const enElements = document.querySelectorAll('.lang-en');
+      const idElements = document.querySelectorAll('.lang-id');
+      const btnEn = document.getElementById('btn-en');
+      const btnId = document.getElementById('btn-id');
+
+      enElements.forEach(el => el.style.display = (lang === 'en') ? '' : 'none');
+      idElements.forEach(el => el.style.display = (lang === 'id') ? '' : 'none');
+
+      btnEn.classList.toggle('active', lang === 'en');
+      btnId.classList.toggle('active', lang === 'id');
+
+      localStorage.setItem('preferredLanguage', lang);
+    }
+
+    // Auto-set preferred language if stored
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang === 'id' || savedLang === 'en') {
+      setLanguage(savedLang);
+    } else {
+      setLanguage('en');
+    }
+  </script>
+</body>
+</html>
