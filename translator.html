@@ -1,51 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Translator - Shafa Millah Ahmad</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Freelance Translator - Shafa Millah Ahmad</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            height: 250px;
+            border-radius: 10px;
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+        }
+        .work-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .work-info ul {
+            padding-left: 20px;
+        }
+        .work-info h4 {
+            margin-top: 1em;
+        }
+        @media screen and (max-width: 768px) {
+            .work-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="l-header">
-    <nav class="nav bd-grid">
-      <div><a href="index.html" class="nav__logo">Shafa Millah Ahmad</a></div>
-    </nav>
-  </header>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div><a href="index.html" class="nav__logo">Shafa Millah Ahmad</a></div>
+        </nav>
+    </header>
 
-  <main class="l-main">
-    <section class="about section" style="margin-top: 80px;">
-      <h2 class="section-title">Work: Freelance Translator</h2>
-      <div class="about__container work-detail">
-        <div class="carousel">
-          <img src="assets/img/work5.jpg" alt="Translator Desk">
-        </div>
-        <div class="work-info">
-          <h3>Deskripsi Pekerjaan</h3>
-          <p>Menyediakan layanan terjemahan lintas bahasa untuk sektor pendidikan, hukum, bisnis, dan teknologi. Menerjemahkan dokumen dari Indonesia ke Inggris dan sebaliknya secara akurat.</p>
-          <h4>Durasi</h4>
-          <p>Juni 2022 – Oktober 2023</p>
-          <h4>Pencapaian</h4>
-          <ul>
-            <li>Menerjemahkan lebih dari 100 dokumen resmi tanpa keluhan klien</li>
-            <li>Berhasil mengelola komunikasi dengan klien luar negeri secara mandiri</li>
-          </ul>
-          <h4>Kontribusi Konkret</h4>
-          <ul>
-            <li>Melakukan pengecekan terminologi teknis agar akurat dan sesuai konteks</li>
-            <li>Memanfaatkan alat bantu terjemahan untuk efisiensi kerja</li>
-          </ul>
-          <h4>Metode STAR (Tanggung Jawab)</h4>
-          <ul>
-            <li><strong>Situation:</strong> Klien memerlukan terjemahan cepat dengan kualitas tinggi.</li>
-            <li><strong>Task:</strong> Menyediakan layanan terjemahan profesional dalam waktu terbatas.</li>
-            <li><strong>Action:</strong> Menggunakan teknik proofreading dan software CAT Tools.</li>
-            <li><strong>Result:</strong> Klien puas dan melakukan repeat order lebih dari 3 kali.</li>
-          </ul>
-          <a href="index.html#work" class="button" style="margin-top: 30px;">&larr; Back to Work</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    <main class="l-main">
+        <section class="about section" style="margin-top: 80px;">
+            <h2 class="section-title">Work: Translator – Freelance</h2>
+            <div class="about__container work-detail">
+                <!-- Carousel Foto -->
+                <div class="carousel">
+                    <img src="assets/img/minithesis.jpg" alt="Mini Thesis">
+                    <img src="assets/img/artikelilmiah.jpg" alt="Scientific Article">
+                    <img src="assets/img/dokumen.jpg" alt="Any Document">
+                </div>
+
+                <!-- Deskripsi -->
+                <div class="work-info">
+                    <h3>Job Description</h3>
+                    <p>
+                        Provides cross-language translation services for the education, legal, business and technology sectors. Accurately translate documents from Indonesian to English and vice versa.
+                    </p>
+
+                    <h4>Duration</h4>
+                    <p>Nanti – Nanti</p>
+
+                    <h4>Responsibility</h4>
+                    <ul>
+                    <li>Translate documents, articles, and reports between English and Indonesian</li>
+                    <li>Proofread and edit translations for accuracy, grammar, and tone consistency</li>
+                    <li>Communicate with clients to clarify requirements and deadlines</li>
+                    <li>Maintain consistent terminology across large-scale projects</li>
+                    <li>Deliver high-quality translations on or before deadlines</li>
+                    </ul>
+
+                    <h4>Concrete Contributions</h4>
+                    <ul>
+                    <li>Translated over 200,000 words for industries such as legal, marketing, and technical fields</li>
+                    <li>Created a personal terminology database to ensure consistency across multiple projects</li>
+                    <li>Developed standardized translation report templates to improve client communication and satisfaction</li>
+                    </ul>
+
+                    <a href="index.html#work" class="button" style="margin-top: 30px;">← Back to Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
